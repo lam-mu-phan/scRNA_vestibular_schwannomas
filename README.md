@@ -1,8 +1,8 @@
 # Regenerate figures from research paper
-**Title: Single-cell multi-omic analysis of the vestibular schwannoma ecosystem uncovers a nerve injury-like state**
-Journal: Nature Communications, 2023
-https://doi.org/10.1038/s41467-023-42762-w
-https://www.nature.com/articles/s41467-023-42762-w
+- **Title: Single-cell multi-omic analysis of the vestibular schwannoma ecosystem uncovers a nerve injury-like state** 
+- Journal: Nature Communications, 2023
+- https://doi.org/10.1038/s41467-023-42762-w
+0 https://www.nature.com/articles/s41467-023-42762-w
 
 # Data availability
 All scRNA-seq, scATAC-seq, and new bulk RNA-seq data is available through the Gene Expression Omnibus with GEO accession “GSE216784”. All WES data is available through the database of Genotypes and Phenotypes (dbGaP) with accession “phs003318.v1.p1”.
@@ -38,11 +38,22 @@ The main goal was to understand the heterogeneity within tumor and surrounding m
 Vestibular schwannomas reactivate an injury-response program, reprogramming Schwann cells and shaping a supportive immune microenvironment. The study highlights the power of single-cell multi-omics to uncover these complex cellular states and interactions.
 
 # 📊 Figure 1 Overview (excluding 1a and 1b)
-1. Figure 1c:
-- UMAP plot showing clustering of scRNA-seq data across all cells, colored by cell type or cluster.
-- Shows the cellular composition of the VS tumor ecosystem.
-2. Figure 1d: Proportion barplot or pie chart showing the relative frequencies of major cell types (e.g., Schwann cells, immune cells, fibroblasts) identified from the scRNA-seq.
-3. Figure 1e: Heatmap of top marker genes for each major cell type — rows are genes, columns are clusters/cell types.
-4. Figure 1f: Dot plot or feature plot showing expression levels of selected marker genes across clusters.
+1. Figure 1c: scRNA-seq UMAP
+2. Figure 1d: scATAC-seq UMAP
+3. Figure 1e: Dot plot of marker genes
+4. Figure 1f: Heatmap
 
 # Figure 2 Overview
+
+
+## Fig 1c sheet looks very clean and ready to use in Seurat:
+
+✔️ Columns:
+
+- barcode → unique cell barcode
+- orig.ident → sample ID
+- UMAP_1, UMAP_2 → UMAP coordinates
+- seurat_clusters → cluster number
+- final_label → cell type label (e.g., “Myeloid”, “nmSC”, “TC”)
+- technique → whether the sample was fresh
+- chr22q_loss → genomic info (probably not needed for UMAP plot)
