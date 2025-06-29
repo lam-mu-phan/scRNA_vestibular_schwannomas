@@ -2,7 +2,7 @@
 - **Title: Single-cell multi-omic analysis of the vestibular schwannoma ecosystem uncovers a nerve injury-like state** 
 - Journal: Nature Communications, 2023
 - https://doi.org/10.1038/s41467-023-42762-w
-0 https://www.nature.com/articles/s41467-023-42762-w
+- https://www.nature.com/articles/s41467-023-42762-w
 
 # Data availability
 All scRNA-seq, scATAC-seq, and new bulk RNA-seq data is available through the Gene Expression Omnibus with GEO accession “GSE216784”. All WES data is available through the database of Genotypes and Phenotypes (dbGaP) with accession “phs003318.v1.p1”.
