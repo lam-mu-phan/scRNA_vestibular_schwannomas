@@ -10,19 +10,19 @@ All scRNA-seq, scATAC-seq, and new bulk RNA-seq data is available through the Ge
 **Source data to generate figures: https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-023-42762-w/MediaObjects/41467_2023_42762_MOESM6_ESM.xlsx**
 
 # About this paper
-## 🔬 Objective
+## Objective
 The paper aims to deeply characterize the cellular and molecular ecosystem of vestibular schwannoma (VS) — a benign tumor of the Schwann cells that form the myelin sheath around nerves — by using single-cell RNA-seq (scRNA-seq) and single-nucleus ATAC-seq (snATAC-seq).
 
 The main goal was to understand the heterogeneity within tumor and surrounding microenvironment cells, and to reveal how VS resembles a nerve injury-like state, which might explain how it interacts with neurons and immune cells.
 
-## 🧩 Key Methods
+## Key Methods
 - Collected VS tumor tissues from patients and performed:
 - scRNA-seq to profile gene expression at single-cell resolution.
 - snATAC-seq to profile chromatin accessibility and infer regulatory states.
 - Integrated these data to identify cell types, subtypes, and regulatory programs.
 - Compared VS cells to normal peripheral nerve and injury conditions.
 
-## ⭐️ Main Findings
+## Main Findings
 1. Schwannoma Cells Mimic Nerve Injury:
 - Tumor Schwann cells show gene expression and chromatin states similar to those seen in injured peripheral nerves, including upregulation of repair-associated genes.
 - They adopt a “repair Schwann cell-like” phenotype.
@@ -34,7 +34,7 @@ The main goal was to understand the heterogeneity within tumor and surrounding m
 - The chromatin accessibility profiles confirm reactivation of injury repair programs.
 4. Therapeutic Implication: The discovery of an injury-like program suggests possible targets to modulate the repair-like state or immune interactions in VS, potentially opening new avenues for non-surgical therapies.
 
-## ✅ Takeaway:
+## Takeaway:
 Vestibular schwannomas reactivate an injury-response program, reprogramming Schwann cells and shaping a supportive immune microenvironment. The study highlights the power of single-cell multi-omics to uncover these complex cellular states and interactions.
 
 # 📊 Figure 1 Overview (excluding 1a and 1b)
@@ -46,14 +46,15 @@ Vestibular schwannomas reactivate an injury-response program, reprogramming Schw
 # Figure 2 Overview
 
 
-## Fig 1c sheet looks very clean and ready to use in Seurat:
-
-✔️ Columns:
-
-- barcode → unique cell barcode
-- orig.ident → sample ID
-- UMAP_1, UMAP_2 → UMAP coordinates
-- seurat_clusters → cluster number
-- final_label → cell type label (e.g., “Myeloid”, “nmSC”, “TC”)
-- technique → whether the sample was fresh
-- chr22q_loss → genomic info (probably not needed for UMAP plot)
+## Fig 1c and d use 
+- UMAP_1 and 2 data
+- Label of different cell types/clusters
+## Figure 1e shows:
+- Y-axis: major cell types/clusters (grouped together by Group)
+- X-axis: marker genes
+- Dot size: % of cells expressing the gene
+- Dot color: scaled average expression
+## Figure 1f shows (note: ComplexHeatmap wants a matrix):
+- Rows = Mouse Peripheral Nerve Cell Type
+- Columns = Clusters
+- Cell values = Mean Module Score
