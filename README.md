@@ -43,9 +43,6 @@ Vestibular schwannomas reactivate an injury-response program, reprogramming Schw
 3. Figure 1e: Dot plot of marker genes
 4. Figure 1f: Heatmap
 
-# Figure 2 Overview
-
-
 ## Fig 1c and d use 
 - UMAP_1 and 2 data
 - Label of different cell types/clusters
@@ -58,3 +55,9 @@ Vestibular schwannomas reactivate an injury-response program, reprogramming Schw
 - Rows = Mouse Peripheral Nerve Cell Type
 - Columns = Clusters
 - Cell values = Mean Module Score
+
+# Figure 2 Overview
+- Figure 2b: chr22q Loss UMAP
+- Figure 2e: VS Schwann Cell Subclusters UMAP
+- Figure 2f: chr22q Loss in Schwann Cell UMAP
+- Figure 2g: Heatmap depicting scoring of each VS-SC cluster using signatures from murine nerves
