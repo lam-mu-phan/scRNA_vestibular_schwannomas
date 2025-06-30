@@ -37,26 +37,26 @@ The main goal was to understand the heterogeneity within tumor and surrounding m
 ## Takeaway:
 Vestibular schwannomas reactivate an injury-response program, reprogramming Schwann cells and shaping a supportive immune microenvironment. The study highlights the power of single-cell multi-omics to uncover these complex cellular states and interactions.
 
-# 📊 Figure 1 Overview (excluding 1a and 1b)
+## Figure 1 Overview (excluding 1a and 1b)
 1. Figure 1c: scRNA-seq UMAP
 2. Figure 1d: scATAC-seq UMAP
 3. Figure 1e: Dot plot of marker genes
 4. Figure 1f: Heatmap
 
-## Fig 1c and d use 
+### Fig 1c and d use 
 - UMAP_1 and 2 data
 - Label of different cell types/clusters
-## Figure 1e shows:
+### Figure 1e shows:
 - Y-axis: major cell types/clusters (grouped together by Group)
 - X-axis: marker genes
 - Dot size: % of cells expressing the gene
 - Dot color: scaled average expression
-## Figure 1f shows (note: ComplexHeatmap wants a matrix):
+### Figure 1f shows (note: ComplexHeatmap wants a matrix):
 - Rows = Mouse Peripheral Nerve Cell Type
 - Columns = Clusters
 - Cell values = Mean Module Score
 
-# Figure 2 Overview
+## Figure 2 Overview
 - Figure 2b: chr22q Loss UMAP
 - Figure 2e: VS Schwann Cell Subclusters UMAP
 - Figure 2f: chr22q Loss in Schwann Cell UMAP
